@@ -11,3 +11,14 @@ Restart R may be needed.
 library(DouhauDataStudioServer)
 runDouhauDataStudio("/Users/ippei/develop/data/cdisc/sdtm")
 ```
+
+### Dependencies
++ shiny
++ shinydashboard
++ dplyr
++ stringr
++ SASxport
++ R4DSXML
++ R.utils
++ yaml
++ DT
