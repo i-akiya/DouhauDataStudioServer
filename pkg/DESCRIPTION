@@ -1,0 +1,23 @@
+Package: DouhauDataStudioServer
+Type: Package
+Title: Douhau Data Studio Server
+Version: 0.1
+Date: 2021-2-xx
+Depends: R (>= 4.0.0)
+Author: Ippei Akiya
+Maintainer: Ippei Akiya <ippei.akiya@gmail.com>
+URL: https://github.com/i-akiya/DouhauDataStudioServer
+Description: Douhau Data Studio Server is a data browser for CDISC SDTM built with R Shiny.
+License: MIT + file LICENSE
+Imports: shiny,
+        shinydashboard,
+        dplyr,
+        stringr,
+        SASxport,
+        R4DSXML,
+        R.utils,
+        yaml,
+        DT
+Suggests: testthat
+RoxygenNote: 7.1.1
+Encoding: UTF-8
