@@ -104,9 +104,9 @@ server <- function(input, output, session) {
         #     baseDir <<- getDataDir(query[['id']])
         # }
         
-        if (!"baseDir" %in% ls()) {
-            baseDir <<- "/Users/ippei/develop/data/cdisc/sdtm"
-        }
+        #if (!"baseDir" %in% ls()) {
+        #    baseDir <- "/Users/ippei/develop/data/cdisc/sdtm"
+        #}
         # baseDir <<- "/Users/ippei/develop/data/cdisc/sdtm"
         
         studyInfo <- getStudyInfo(baseDir)
