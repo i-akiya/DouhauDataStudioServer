@@ -1,6 +1,8 @@
 #' Douhau Data Studio Launcher
 #'
 #' @param dataDir A path sting of a data directory
+#' @param host A hostname or IP. If this argument
+#'   is not specified, the shiny.port option is configured automatically.
 #' @param port A port number as integer value should listen on. If this argument
 #'   is not specified, the shiny.port option is configured automatically.
 #' @param launch.browser launch.browser argument can accept a logical value. If
