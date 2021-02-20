@@ -9,7 +9,7 @@ Restart R may be needed.
 ## Start Douhau Data Studio Serve
 ```
 library(DouhauDataStudioServer)
-runDouhauDataStudio("/Users/ippei/develop/data/cdisc/sdtm")
+runDouhauDataStudio("/path/to/data/dir")
 ```
 
 ### Dependencies
