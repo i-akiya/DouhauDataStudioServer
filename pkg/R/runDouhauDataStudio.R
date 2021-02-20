@@ -8,11 +8,12 @@
 #'   launched. And in case of TRUE, default will be launted. If this argument is
 #'   not specified, the shiny.port option is configured automatically.
 #' @export
-runDouhauDataStudio <- function(dataDir, port = getOption("shiny.port"), launch.browser = getOption("shiny.launch.browser", interactive())) {
+runDouhauDataStudio <- function(dataDir, host = getOption("shiny.host"), port = getOption("shiny.port"), launch.browser = getOption("shiny.launch.browser", interactive())) {
         baseDir <- dataDir
         
         shiny::runApp(appDir = system.file("shiny-app", 
                                            package = "DouhauDataStudioServer"),
+                                           host = host,
                                            port = port,
                                            launch.browser = launch.browser)
 }
