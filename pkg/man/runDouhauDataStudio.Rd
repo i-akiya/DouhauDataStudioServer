@@ -6,12 +6,16 @@
 \usage{
 runDouhauDataStudio(
   dataDir,
+  host = getOption("shiny.host"),
   port = getOption("shiny.port"),
   launch.browser = getOption("shiny.launch.browser", interactive())
 )
 }
 \arguments{
 \item{dataDir}{A path sting of a data directory}
+
+\item{host}{A hostname or IP. If this argument
+is not specified, the shiny.port option is configured automatically.}
 
 \item{port}{A port number as integer value should listen on. If this argument
 is not specified, the shiny.port option is configured automatically.}
