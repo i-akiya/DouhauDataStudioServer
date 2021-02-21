@@ -12,7 +12,6 @@
 #' @export
 runDouhauDataStudio <- function(dataDir, host = getOption("shiny.host"), port = getOption("shiny.port"), launch.browser = getOption("shiny.launch.browser", interactive())) {
         baseDir <- dataDir
-        
         shiny::runApp(appDir = system.file("shiny-app", 
                                            package = "DouhauDataStudioServer"),
                                            host = host,

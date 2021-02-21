@@ -109,8 +109,8 @@ server <- function(input, output, session) {
         #}
         # baseDir <<- "/Users/ippei/develop/data/cdisc/sdtm"
         
-        studyInfo <- getStudyInfo(baseDir)
-        flist <- getDatasetFileList(baseDir)
+        studyInfo <<- getStudyInfo(baseDir)
+        flist <<- getDatasetFileList(baseDir)
         length.flist <- length(flist)
         
         output$StudyName <- renderText( studyInfo["StudyName"] )
